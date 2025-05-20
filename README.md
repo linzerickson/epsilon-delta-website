@@ -1,11 +1,5 @@
 # Epsilon Delta Analytics Website
 
-![GitHub last commit](https://img.shields.io/github/last-commit/lindsayerickson/epsilon-delta)
-![GitHub repo size](https://img.shields.io/github/repo-size/lindsayerickson/epsilon-delta)
-![GitHub license](https://img.shields.io/github/license/lindsayerickson/epsilon-delta)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Flindsayerickson.github.io%2Fepsilon-delta)
-
-
 Welcome to the official website repository for **Epsilon Delta Analytics**, a technology consultancy focused on delivering practical, accessible solutions for individuals and small businesses—especially those in rural communities.
 
 ## 🌐 Live Site
