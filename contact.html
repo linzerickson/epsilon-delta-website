@@ -145,9 +145,32 @@
     </ul>
   </nav>
 
+  <div id="statusMessage" style="display: none; padding: 1em; margin-bottom: 1em; border-radius: 4px;"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    const statusMessageDiv = document.getElementById('statusMessage');
+
+    if (status === 'success') {
+      statusMessageDiv.textContent = '✅ Your message was sent successfully!';
+      statusMessageDiv.style.display = 'block';
+      statusMessageDiv.style.backgroundColor = '#d4edda';
+      statusMessageDiv.style.color = '#155724';
+      statusMessageDiv.style.border = '1px solid #c3e6cb';
+    } else if (status === 'error') {
+      statusMessageDiv.textContent = '❌ There was an error sending your message. Please try again.';
+      statusMessageDiv.style.display = 'block';
+      statusMessageDiv.style.backgroundColor = '#f8d7da';
+      statusMessageDiv.style.color = '#721c24';
+      statusMessageDiv.style.border = '1px solid #f5c6cb';
+    }
+  </script>
+
+
   <section class="section">
     <h2>Contact Form</h2>
-    <form action="#" method="POST">
+    <form action="src/contact.php" method="POST">
       <label for="name">Name</label>
       <input id="name" name="name" type="text" placeholder="Your full name" required />
 

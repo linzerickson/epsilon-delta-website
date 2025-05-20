@@ -1,0 +1,176 @@
+/* Root color variables */
+:root {
+  --primary-color: #333366;
+  --accent-color: #6c9edc;
+  --background-color: #f4f6f9;
+  --section-background: #ffffff;
+}
+
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background-color);
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+/* Header styles */
+header {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 10%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Responsive nav for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+/* Section styling - centered content box with flex layout */
+.section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: var(--section-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Alternate background and reversed layout for even sections */
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: #eef1f5;
+}
+
+/* Image inside section */
+.section img {
+  max-width: 100%;
+  width: 400px;      /* fixed width */
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+/* Text container inside section */
+.section .text {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Two column list for services list, with responsive fallback */
+.two-column-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 1em 2em;
+  list-style-type: disc;
+  padding-left: 2em;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: var(--section-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: block; /* or just don't set display:flex */
+}
+
+.services-section {
+  display: block !important;  /* override flex */
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: var(--section-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  font-size: 18px;
+  line-height: 1.6;
+  list-style-position: inside;
+}
+
+@media (max-width: 600px) {
+  .two-column-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive header h1 font size */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  /* Stack section vertically on small screens */
+  .section {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .section img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
