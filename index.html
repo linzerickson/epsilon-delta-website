@@ -5,81 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Epsilon Delta Analytics</title>
   <style>
-    :root {
-      --primary-color: #333366;
-      --accent-color: #6c9edc;
-      --background-color: #f4f6f9;
-      --section-background: #ffffff;
-    }
+  :root {
+    --primary-color: #333366;
+    --accent-color: #6c9edc;
+    --background-color: #f4f6f9;
+    --section-background: #ffffff;
+  }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--background-color);
-      line-height: 1.7;
-      font-size: 18px;
-    }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    line-height: 1.7;
+    font-size: 18px;
+  }
 
-    header {
-      background: url('images/hero.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
+  header {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
 
-    header img {
-      max-width: 150px;
-      margin-bottom: 1rem;
-    }
+  header img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
 
-    .section {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem 10%;
-      background-color: var(--section-background);
-      align-items: center;
-    }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 10%;
+    background-color: var(--section-background);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 
-    .section.reverse {
+  .section:nth-child(even) {
     flex-direction: row-reverse;
     background-color: #eef1f5;
   }
 
-    .section img {
-      flex: 1 1 40%;
-      max-width: 100%;
-      margin: 1rem;
-      border-radius: 8px;
-    }
+  .section img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;         /* << constrain width */
+    flex: 0 0 auto;
+    border-radius: 8px;
+  }
 
-    .section .text {
-      flex: 1 1 50%;
-      margin: 1rem;
-    }
+  .section .text {
+    flex: 1 1 50%;
+    min-width: 280px;
+  }
 
-    footer {
-      background: var(--primary-color);
-      color: white;
-      text-align: center;
+  footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column !important;
       padding: 1rem;
-      font-size: 0.9rem;
     }
 
-    @media (max-width: 768px) {
-      .section {
-        flex-direction: column !important;
-        padding: 1rem;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
+    .section img {
+      width: 100%;
+      max-width: 100%;
     }
-  </style>
+
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+
 </head>
 <body>
 
