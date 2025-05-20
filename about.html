@@ -1,1 +1,129 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Epsilon Delta Analytics</title>
+  <style>
+    :root {
+      --primary-color: #333366;
+      --accent-color: #6c9edc;
+      --background-color: #f4f6f9;
+      --section-background: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    header {
+      background: url('images/hero.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+      padding: 1rem 10%;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: var(--section-background);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Epsilon Delta Analytics Logo" />
+    <h1>About Us</h1>
+    <p>Learn more about Epsilon Delta Analytics</p>
+  </header>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>Our Story</h2>
+    <p>
+      Epsilon Delta Analytics is committed to providing practical technology solutions that empower individuals and small businesses. Founded with a mission to simplify tech, we specialize in automation, data analysis, and custom websites tailored to your unique needs.
+    </p>
+    <p>
+      Our team combines technical expertise with a passion for helping communities, especially in rural areas, thrive through accessible and affordable technology.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Epsilon Delta Analytics. All rights reserved.
+  </footer>
+
+</body>
+</html>
 
