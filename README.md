@@ -1,37 +1,33 @@
-Project Title: Epsilon Delta Website
-This is the code to my website.  Check to see if it is working properly at epsilondeltaanalytics.com
+# Epsilon Delta Analytics Website
 
-Description
-An in-depth paragraph about your project and overview of use.
+Welcome to the official website repository for **Epsilon Delta Analytics**, a technology consultancy focused on delivering practical, accessible solutions for individuals and small businesses—especially those in rural communities.
 
-Getting Started
-Dependencies
-Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-ex. Windows 10
-Installing
-How/where to download your program
-Any modifications needed to be made to files/folders
-Executing program
-How to run the program
-Step-by-step bullets
-code blocks for commands
-Help
-Any advise for common problems or issues.
+## 🌐 Live Site
 
-command to run if program contains helper info
-Authors
-Contributors names and contact info
+[Visit the live site](#)  
+(*Add your deployment link here once published, e.g., GitHub Pages, Netlify, Vercel, etc.*)
 
-ex. Dominique Pizzie
-ex. @DomPizzie
+---
 
-Version History
-0.2
-Various bug fixes and optimizations
-See commit change or See release history
-0.1
-Initial Release
-License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+## 🚀 About Epsilon Delta Analytics
 
-Acknowledgments
+We provide:
+- ✅ Custom websites and automation tools
+- ✅ Data analysis and visualization services
+- ✅ One-on-one tech consulting with no jargon
+- ✅ Support tailored for rural and underserved communities
+
+We believe in making technology approachable, affordable, and effective.
+
+---
+
+## 📁 Project Structure
+
+```plaintext
+.
+├── index.html               # Main landing page
+├── services.html            # Description of offerings (coming soon)
+├── about.html               # Background and mission (coming soon)
+├── contact.html             # Contact form or info (coming soon)
+├── images/                  # Free-to-use images and logos
+└── styles/                  # (Optional) External CSS files
