@@ -4,7 +4,7 @@ Welcome to the official website repository for **Epsilon Delta Analytics**, a te
 
 ## 🌐 Live Site
 
-[Visit the live site](https://lindsayerickson.github.io/epsilon-delta/)
+[Visit the live site](https://epsilondeltaanalytics.com/)
 
 ---
 
